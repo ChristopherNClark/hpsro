@@ -1,3 +1,18 @@
+#' DATASET
+#'
+#' A dataset containing information for HPS week 1 and week 2.
+#'
+#' This dataset is automatically generated and loaded using the
+#' `load_data_week_number` function.
+#'
+#' @format
+#' A data frame with ...
+#'
+#' @source
+#' Downloaded from GitHub repository: https://github.com/ChristopherNClark/hpsro
+#'
+#' @export
+
 #' Prepare and save the DATASET dataset
 #'
 #' @noRd

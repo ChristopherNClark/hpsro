@@ -16,3 +16,6 @@ Suggests:
     tidyverse
 URL: https://github.com/ChristopherNClark/hpsro
 BugReports: https://github.com/ChristopherNClark/hpsro/issues
+Depends: 
+    R (>= 2.10)
+LazyData: true

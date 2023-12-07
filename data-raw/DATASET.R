@@ -34,6 +34,6 @@ save(parquet_data_week1, file = "data/week1.rda")
 parquet_url_week2 <- "https://github.com/prasadbhoite/HPS_PUF/raw/main/Data/02.Week2_05.07.20_05.12.20/HPS_week2_data_parquet.parquet"
 # Read the Parquet file into a data frame
 parquet_data_week2 <- arrow::read_parquet(parquet_url_week2)
-save(parquet_url_week2, file = "data/week2.rda")
+save(parquet_data_week2, file = "data/week2.rda")
 
 

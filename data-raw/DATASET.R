@@ -22,12 +22,18 @@
 #' @importFrom arrow read_parquet
 #' @importFrom usethis use_data
 
-# Construct the GitHub raw file URLs
-file_names <- c("HPS_week1_data_parquet.parquet", "HPS_week2_data_parquet.parquet")
-github_urls <- paste0("https://github.com/ChristopherNClark/hpsro/raw/master/data-raw/", file_names)
 
-# Read data from GitHub using arrow::read_parquet
-DATASET <- purrr::map_df(github_urls, arrow::read_parquet)
+# Week 1:
+parquet_url_week1 <- "https://github.com/prasadbhoite/HPS_PUF/raw/main/Data/01.Week1_04.23.20_05.01.20/HPS_week1_data_parquet.parquet"
+# Read the Parquet file into a data frame
+parquet_data_week1 <- arrow::read_parquet(parquet_url_week1)
+#usethis::use_data(parquet_data_week1, overwrite = TRUE)
+save(parquet_data_week1, file = "data/week1.rda")
 
-# Use usethis::use_data to save DATASET in the data folder
-usethis::use_data(DATASET, overwrite = TRUE)
+# Week 2:
+parquet_url_week2 <- "https://github.com/prasadbhoite/HPS_PUF/raw/main/Data/02.Week2_05.07.20_05.12.20/HPS_week2_data_parquet.parquet"
+# Read the Parquet file into a data frame
+parquet_data_week2 <- arrow::read_parquet(parquet_url_week2)
+save(parquet_url_week2, file = "data/week2.rda")
+
+

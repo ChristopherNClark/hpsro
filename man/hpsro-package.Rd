@@ -4,9 +4,9 @@
 \name{hpsro-package}
 \alias{hpsro}
 \alias{hpsro-package}
-\title{hpsro: What the Package Does (One Line, Title Case)}
+\title{hpsro: Provides Publicly Available Data to User by Week}
 \description{
-What the package does (one paragraph).
+This package provides HPS data to the user by specifying what week of data to load.
 }
 \seealso{
 Useful links:
@@ -17,7 +17,19 @@ Useful links:
 
 }
 \author{
-\strong{Maintainer}: First Last \email{first.last@example.com} (\href{https://orcid.org/YOUR-ORCID-ID}{ORCID})
+\strong{Maintainer}: Prasad Bhoite \email{pbhoite@fiu.edu} (\href{https://orcid.org/0000-0003-2548-0066}{ORCID})
+
+Authors:
+\itemize{
+  \item Christopher Clark \email{chrclark@fiu.edu}
+}
+
+Other contributors:
+\itemize{
+  \item Krupa Patel \email{krpatel@fiu.edu} [contributor]
+  \item Rachel Clarke \email{kclarke@fiu.edu} [contributor]
+  \item Nana Garba \email{ngarba@fiu.edu} [contributor]
+}
 
 }
 \keyword{internal}
